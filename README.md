@@ -72,3 +72,19 @@ You need to include your time complexity analysis as comments in your program. T
 
 Restrictions:
 All the data structures and algorithms must be implemented in the TaskScheduler class. You are NOT allowed to use any sorting algorithms and priority queues provided by Java.
+
+ASSIGNMENT FOUR:
+In this individual assignment, you will implement the compact representation of the compressed suffix trie ADT for DNA analyses.
+
+The data structures for the compressed suffix trie are not given in the above template. You need to define them yourself. You may introduce any helper methods to facilitate the implementation of these two methods.
+
+The constructor creates a compact representation of the compressed suffix trie from an input text file f that stores a DNA sequence. All the characters of the DNA sequence are A, C, G and T. The findString(s) method has only one parameter: a pattern s. If s appears in the DNA sequence, findString(s) will return the starting index of the first occurrence of s in the DNA sequence. Otherwise, it will return –1. For example, if the DNA sequence is AAACAACTTCGTAAGTATA, then findString(“CAACT”) will return 3 and findString(“GAAG”) will return –1. Note that the index of the first character of the DNA sequence is 0.
+
+Warning: If your findString(s) method is slower than O(|s|) (|s| is the length of s), you will get 0 mark for it. 
+
+The method similarityAnalyser(String f1, String f2, String f3) performs the following tasks:
+
+1. Computing the longest common subsequence of the two DNA sequences stored in the text files f1 and f2, respectively, and writing it to the file f3.
+2. Returning the degree of similarity of two DNA sequences stored in the text files f1 and f2. The degree of similarity of two DNA sequences S1 and S2 is equal to |lcs(S1,S2)|/max{|S1|,|S2|}, where |lcs(S1,S2)|, |S1| and |S2| are the lengths of a longest common subsequence of S1 and S2, S1 and S2, respectively. For simplicity, you may assume that each file contains at most 1000 DNA characters. When your program reads a DNA sequence from a text file, it needs to ignore all non-DNA characters such as the newline character. Notice that this method does not need to use any compressed suffix trie. The running time of your method similarityAnalyser(f1, f2, f3) is required to be at most O(mn) , where m and n are the sizes of f1 and f2, respectively. Any method with a higher time complexity will be given 0 mark.
+
+You need to give the running time analyses of all the methods in terms of the Big O notation. Include your running time analyses in the source file of the CompressedSuffixTrie class and comment out them.
