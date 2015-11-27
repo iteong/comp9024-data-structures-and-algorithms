@@ -1,7 +1,7 @@
 # comp9024-data-structures-and-algorithms
 Java Assignments for Data Structures and Algorithms (UNSW Semester 2 2015)
 
-ASSIGNMENT ONE:
+***ASSIGNMENT ONE:
 In this assignment, you extend the doubly linked list class DList given in the textbook. The subclass is named MyDlist.
 
 You need to implement the following constructors and methods of MyDlist:
@@ -22,7 +22,7 @@ Include the detailed time complexity analysis of this method in big O notation i
 Given two sets A and B, the intersection of A and B is a set that contains all the elements of A that are also in B. Include the detailed time complexity analysis of this method in big O notation immediately above the source code of this method as comments.
 We assume that all the elements of a set are distinct.
 
-ASSIGNMENT TWO:
+***ASSIGNMENT TWO:
 In this assignment, you will implement a class named ExtendedAVLTree. ExtendedAVLTree extends the AVLTree class to include the following methods:
 
 - Public static <K, V> AVLTree<K, V> clone(AVLTree<K,V> tree)
@@ -42,7 +42,7 @@ For simplicity, we assume that K is int and V is String.
 All the related classes are in the package net-datastructures-4-0. Please download net- datastructures-4-0, install it on your own computer and create the new class ExtendedAVLTree in the same package.
 You need to read the code of all the related classes in order to understand how the AVLTree class is implemented.
 
-ASSIGNMENT THREE:
+***ASSIGNMENT THREE:
 This is an individual assignment. In this assignment, you will implement a task scheduler in Java.
 
 Background:
@@ -73,7 +73,7 @@ You need to include your time complexity analysis as comments in your program. T
 Restrictions:
 All the data structures and algorithms must be implemented in the TaskScheduler class. You are NOT allowed to use any sorting algorithms and priority queues provided by Java.
 
-ASSIGNMENT FOUR:
+***ASSIGNMENT FOUR:
 In this individual assignment, you will implement the compact representation of the compressed suffix trie ADT for DNA analyses.
 
 The data structures for the compressed suffix trie are not given in the above template. You need to define them yourself. You may introduce any helper methods to facilitate the implementation of these two methods.
